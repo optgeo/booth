@@ -10,6 +10,6 @@ connect:
         ruby -e 'ARGF.each{|l| print "ipfs swarm connect #{l}" }' | sh
 
 pin:
-	ipfs pin add QmWsTYyEq9Trn31ZuU8cAJRnCm2WbzduiQLm4Uy7AfcNSs # Smart Maps Global Elevation Tiles
-	ipfs pin add QmSMpoELQsJjpYYEuNhaoQPsQdq8dVTkbt63vt9ZSu9Dja # OSMFJ OpenStreetMap PMTiles
+	ipfs pin add --progress QmWsTYyEq9Trn31ZuU8cAJRnCm2WbzduiQLm4Uy7AfcNSs # Smart Maps Global Elevation Tiles
+	ipfs pin add --progress QmSMpoELQsJjpYYEuNhaoQPsQdq8dVTkbt63vt9ZSu9Dja # OSMFJ OpenStreetMap PMTiles
 

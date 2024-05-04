@@ -1,5 +1,5 @@
 GATEWAY := 12D3KooWHfRi5wLsK6yu6rQdgVqtcdJ6m8jVLSmrd66wRK9Uh8BC
-MAIN_NODE:= 12D3KooWRErZcRd77zZn4CgQUAb2nT4PpvoUHJKSLRnJZUKk3Wj1
+MAIN_NODE:= 12D3KooWRS41c8b11hMeQQgFCLYcMuoZAEVjua24EhMzKBHsCzbP
 
 prepare:
 	sudo sysctl -w net.core.rmem_max=2500000; \

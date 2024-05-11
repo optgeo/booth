@@ -15,6 +15,6 @@ node_connect:
 	ruby -e 'ARGF.each{|l| system "ipfs swarm connect #{l}" }'
 
 pin:
-	#ipfs pin add --progress QmWsTYyEq9Trn31ZuU8cAJRnCm2WbzduiQLm4Uy7AfcNSs # Smart Maps Global Elevation Tiles
+	ipfs pin add --progress QmWsTYyEq9Trn31ZuU8cAJRnCm2WbzduiQLm4Uy7AfcNSs # Smart Maps Global Elevation Tiles
 	ipfs pin add --progress QmSMpoELQsJjpYYEuNhaoQPsQdq8dVTkbt63vt9ZSu9Dja # OSMFJ OpenStreetMap PMTiles
 

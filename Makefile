@@ -1,4 +1,5 @@
 GATEWAY := 12D3KooWHfRi5wLsK6yu6rQdgVqtcdJ6m8jVLSmrd66wRK9Uh8BC
+GATEWAY2 := 12D3KooWEjsGPUQJ4Ej3d1Jcg4VckWhFbhc6mkGunMm1faeSzZMu
 MAIN_NODE:= 12D3KooWRS41c8b11hMeQQgFCLYcMuoZAEVjua24EhMzKBHsCzbP
 
 prepare:
@@ -8,6 +9,8 @@ prepare:
 
 connect:
 	ipfs id ${GATEWAY} | jq .Addresses[] |\
+        ruby -e 'ARGF.each{|l| print "ipfs swarm connect #{l}" }' | sh
+	ipfs id ${GATEWAY2} | jq .Addresses[] |\
         ruby -e 'ARGF.each{|l| print "ipfs swarm connect #{l}" }' | sh
 
 node_connect:
